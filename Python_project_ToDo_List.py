@@ -1,3 +1,10 @@
+# # To Do List using python3
+
+# A to-do list is a list of tasks or activities that need to be completed within a certain timeframe. 
+# It is a helpful tool for organizing and prioritizing tasks to ensure productivity and efficient time management. 
+# To-do lists can be used for personal, professional, or academic purposes and To do list provides you with access to add a task set it as complete
+# when done allows you to delete the task too within command line interface.
+
 tasks = []
 
 def add_task():
@@ -31,13 +38,13 @@ def delete_task():
     task_number = int(input("Enter the task number to delete: "))
     if 1 <= task_number <= len(tasks):
         deleted_task = tasks.pop(task_number - 1)
-        print(f"Task '{deleted_task}' deleted successfully.")
+        print(f"Task '{deleted_task}' deleted task successfully.")
     else:
         print("Invalid task number.")
 
 def main():
     while True:
-        print("\n==== To-Do List ====")
+        print("\n**==== To-Do List ====**")
         print("1. Add Task")
         print("2. View Tasks")
         print("3. Mark Task as Complete")
@@ -55,7 +62,7 @@ def main():
         elif choice == "4":
             delete_task()
         elif choice == "5":
-            print("Thank you for using the to-do list. Goodbye!")
+            print("Thank you for using the to-do list. Goodbye! for now Do revisit!!")
             break
         else:
             print("Invalid choice. Please try again.")
